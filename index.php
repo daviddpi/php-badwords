@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 
-<?php 
+<?php
 
-    $_GET["name"];
     $string = "Sereno è, sereno sarà, se non sarà sereno si rasserenerà";
-    $newString = str_replace("word", "***", $string);
+    $newString = str_replace($_GET["word"], "***", $string);
     $longString1 = strlen($string);
     $longString1 = strlen($newString);
 
@@ -20,7 +19,7 @@
 <body>
     <h1>Testo</h1>
     <p> <?php echo $string ?></p>
-    <h6> Ciao <?php echo $name ?></h6>
+    <h6> Ciao <?php echo $_GET["word"]; ?></h6>
     <div><?php echo $longString1 ?></div>
 
     <p> <?php echo $newString ?></p>
