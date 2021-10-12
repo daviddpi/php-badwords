@@ -3,9 +3,11 @@
 <?php
 
     $string = "Sereno è, sereno sarà, se non sarà sereno si rasserenerà";
-    $newString = str_replace($_GET["word"], "***", $string);
+    $stringChange = strtolower($string);
+    $newString = str_replace($_GET["word"], "***", $stringChange);
+
     $longString1 = strlen($string);
-    $longString1 = strlen($newString);
+    $longString2 = strlen($newString);
 
 ?>
 
